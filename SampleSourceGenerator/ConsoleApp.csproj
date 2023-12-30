@@ -8,8 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj"
-											OutputItemType="Analyzer"
-											ReferenceOutputAssembly="false"/>
+    <None Remove="Message.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Message.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
 </Project>
